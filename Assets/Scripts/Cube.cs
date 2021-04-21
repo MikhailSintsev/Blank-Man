@@ -3,10 +3,12 @@ using UnityEngine;
 public class Cube : MonoBehaviour
 {
     private Renderer cubeColor;
+    private Rigidbody cubeRigidbody;
 
     void Start()
     {
         cubeColor = GetComponent<Renderer>();
+        cubeRigidbody = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -19,5 +21,8 @@ public class Cube : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.O))
             cubeColor.material.color = ColorChanger.Color;
+
+        if (Input.GetKeyDown(KeyCode.G))
+            cubeRigidbody.useGravity = !cubeRigidbody.useGravity;
     }
 }
