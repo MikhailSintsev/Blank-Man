@@ -5,7 +5,7 @@ public class ShowHideCanvas : MonoBehaviour
     public Animator helpCanvasAnimator;
     public Animator overlayFadeInOut;
 
-    public bool showHelpCanvas = false;
+    bool showHelpCanvas = false;
 
     private void Update()
     {

@@ -13,12 +13,14 @@ public class OverlayBehaviour : MonoBehaviour
     public Image spaceImage;
     public Image fImage;
     public Image gImage;
+    public Image rImage;
     public Image cImage;
     public Image hImage;
     public Image uImage;
     public Image iImage;
     public Image oImage;
     public Image pImage;
+    public Image escImage;
 
     public Toggle flyModeToggle;
     public Toggle gravityToggle;
@@ -28,11 +30,6 @@ public class OverlayBehaviour : MonoBehaviour
 
     bool flyModeIsOn;
     bool gravityIsOn;
-
-    private void Start()
-    {
-        firstButtonColor = wImage.color;
-    }
 
     private void Update()
     {
@@ -92,6 +89,12 @@ public class OverlayBehaviour : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.G))
             gImage.color = firstButtonColor;
 
+        // R - Reload Scene
+        if (Input.GetKeyDown(KeyCode.R))
+            rImage.color = secondButtonColor;
+        if (Input.GetKeyUp(KeyCode.R))
+            rImage.color = firstButtonColor;
+
         // C - Floor Color
         if (Input.GetKeyDown(KeyCode.C))
             cImage.color = secondButtonColor;
@@ -127,5 +130,11 @@ public class OverlayBehaviour : MonoBehaviour
             pImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.P))
             pImage.color = firstButtonColor;
+
+        // Esc - Exit
+        if (Input.GetKeyDown(KeyCode.Escape))
+            escImage.color = secondButtonColor;
+        if (Input.GetKeyUp(KeyCode.Escape))
+            escImage.color = firstButtonColor;
     }
 }

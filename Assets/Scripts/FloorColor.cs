@@ -16,12 +16,12 @@ public class FloorColor : MonoBehaviour
             _floorColor.material.color = new Color(Random.value, Random.value, Random.value);
 
         //  При нажатии клавиши "R" включать/выключать отбрасывание тени на объект.
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            if (_floorColor.receiveShadows == true)
-                _floorColor.receiveShadows = false;
-            else if (_floorColor.receiveShadows == false)
-                _floorColor.receiveShadows = true;
-        }
+        //if (Input.GetKeyDown(KeyCode.R))
+        //{
+        //    if (_floorColor.receiveShadows == true)
+        //        _floorColor.receiveShadows = false;
+        //    else if (_floorColor.receiveShadows == false)
+        //        _floorColor.receiveShadows = true;
+        //}
     }
 }
