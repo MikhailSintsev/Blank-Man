@@ -1,12 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class SpawnObjectPrefab : MonoBehaviour
 {
-    //
-    
     //  Назначение : 
     // Спавнить префабы в ряд по оси X до достижения их максимального количества в ряде,
     // затем сместить позицию спавна по оси Z и начать новый ряд.
@@ -35,19 +31,17 @@ public class SpawnObjectPrefab : MonoBehaviour
     }
 
     private void Update()
-    {        
+    {
         //  Спавнится один префаб за одно нажатие клавиши.
         if (Input.GetKeyDown(KeyCode.P))
-        {            
+        {
             if (count < maxCount)
-            {
-                SpawnPrefab();                
-            }
+                SpawnPrefab();
             else
             {
                 count = 0;
                 pos.x = startPoint.x;
-                pos.z += offset;                
+                pos.z += offset;
                 SpawnPrefab();
             }
         }
@@ -56,9 +50,7 @@ public class SpawnObjectPrefab : MonoBehaviour
         if (Input.GetKey(KeyCode.U))
         {
             if (count < maxCount)
-            {
                 SpawnPrefab();
-            }
             else
             {
                 count = 0;

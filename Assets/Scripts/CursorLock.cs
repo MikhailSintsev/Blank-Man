@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class CursorLock : MonoBehaviour
 {
+    // Режим блокировки и невидимости курсора в инспекторе
+
     [SerializeField] private bool _lockCursor;
 
     void Update()
