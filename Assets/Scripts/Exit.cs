@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Exit : MonoBehaviour
 {
-    // Закрыть приложение по нажатию Esc
+    // Р—Р°РєСЂС‹С‚СЊ РїСЂРёР»РѕР¶РµРЅРёРµ РїРѕ РЅР°Р¶Р°С‚РёСЋ Esc
 
     private void Update()
     {

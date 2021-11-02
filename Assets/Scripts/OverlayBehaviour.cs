@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 public class OverlayBehaviour : MonoBehaviour
 {
-    // Изменить цвет (изменить/вернуть прежний) изображения кнопки (снять/поставить галку)
-    // в зависимости от нажатой клавиши
+    // РР·РјРµРЅРёС‚СЊ С†РІРµС‚ (РёР·РјРµРЅРёС‚СЊ/РІРµСЂРЅСѓС‚СЊ РїСЂРµР¶РЅРёР№) РёР·РѕР±СЂР°Р¶РµРЅРёСЏ РєРЅРѕРїРєРё (СЃРЅСЏС‚СЊ/РїРѕСЃС‚Р°РІРёС‚СЊ РіР°Р»РєСѓ)
+    // РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РЅР°Р¶Р°С‚РѕР№ РєР»Р°РІРёС€Рё
 
     public Image wImage;
     public Image sImage;
@@ -34,43 +34,43 @@ public class OverlayBehaviour : MonoBehaviour
 
     private void Update()
     {
-        // W - Forward (Вперед)
+        // W - Forward (Р’РїРµСЂРµРґ)
         if (Input.GetKeyDown(KeyCode.W))
             wImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.W))
             wImage.color = firstButtonColor;
 
-        // S - Backward (Назад)
+        // S - Backward (РќР°Р·Р°Рґ)
         if (Input.GetKeyDown(KeyCode.S))
             sImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.S))
             sImage.color = firstButtonColor;
 
-        // A - Left (Влево)
+        // A - Left (Р’Р»РµРІРѕ)
         if (Input.GetKeyDown(KeyCode.A))
             aImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.A))
             aImage.color = firstButtonColor;
 
-        // D - Right (Вправо)
+        // D - Right (Р’РїСЂР°РІРѕ)
         if (Input.GetKeyDown(KeyCode.D))
             dImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.D))
             dImage.color = firstButtonColor;
 
-        // Shift - Acceleration (Ускорение)
+        // Shift - Acceleration (РЈСЃРєРѕСЂРµРЅРёРµ)
         if (Input.GetKey(KeyCode.LeftShift))
             shiftImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.LeftShift))
             shiftImage.color = firstButtonColor;
 
-        // Space - Jump (Прыжок)
+        // Space - Jump (РџСЂС‹Р¶РѕРє)
         if (Input.GetKeyDown(KeyCode.Space))
             spaceImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.Space))
             spaceImage.color = firstButtonColor;
 
-        // F - Fly (Режим полета)
+        // F - Fly (Р РµР¶РёРј РїРѕР»РµС‚Р°)
         if (Input.GetKeyDown(KeyCode.F))
         {
             fImage.color = secondButtonColor;
@@ -80,7 +80,7 @@ public class OverlayBehaviour : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.F))
             fImage.color = firstButtonColor;
 
-        //G - Gravity (Режим гравитации)
+        //G - Gravity (Р РµР¶РёРј РіСЂР°РІРёС‚Р°С†РёРё)
         if (Input.GetKeyDown(KeyCode.G))
         {
             gImage.color = secondButtonColor;
@@ -90,49 +90,49 @@ public class OverlayBehaviour : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.G))
             gImage.color = firstButtonColor;
 
-        // R - Reload Scene (Перезагрузка сцены)
+        // R - Reload Scene (РџРµСЂРµР·Р°РіСЂСѓР·РєР° СЃС†РµРЅС‹)
         if (Input.GetKeyDown(KeyCode.R))
             rImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.R))
             rImage.color = firstButtonColor;
 
-        // C - Floor Color (Цвет пола)
+        // C - Floor Color (Р¦РІРµС‚ РїРѕР»Р°)
         if (Input.GetKeyDown(KeyCode.C))
             cImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.C))
             cImage.color = firstButtonColor;
 
-        // H - Help (Подсказка)
+        // H - Help (РџРѕРґСЃРєР°Р·РєР°)
         if (Input.GetKeyDown(KeyCode.H))
             hImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.H))
             hImage.color = firstButtonColor;
 
-        // U - Unlimited Spawn (Бесконечный спавн)
+        // U - Unlimited Spawn (Р‘РµСЃРєРѕРЅРµС‡РЅС‹Р№ СЃРїР°РІРЅ)
         if (Input.GetKeyDown(KeyCode.U))
             uImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.U))
             uImage.color = firstButtonColor;
 
-        // I - Individual Color (Индивидуальный цвет)
+        // I - Individual Color (РРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Р№ С†РІРµС‚)
         if (Input.GetKeyDown(KeyCode.I))
             iImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.I))
             iImage.color = firstButtonColor;
 
-        // O - One Color (Общий цвет)
+        // O - One Color (РћР±С‰РёР№ С†РІРµС‚)
         if (Input.GetKeyDown(KeyCode.O))
             oImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.O))
             oImage.color = firstButtonColor;
 
-        // P - Spawn One Object (Заспавнить один объект)
+        // P - Spawn One Object (Р—Р°СЃРїР°РІРЅРёС‚СЊ РѕРґРёРЅ РѕР±СЉРµРєС‚)
         if (Input.GetKeyDown(KeyCode.P))
             pImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.P))
             pImage.color = firstButtonColor;
 
-        // Esc - Exit (Выход)
+        // Esc - Exit (Р’С‹С…РѕРґ)
         if (Input.GetKeyDown(KeyCode.Escape))
             escImage.color = secondButtonColor;
         if (Input.GetKeyUp(KeyCode.Escape))

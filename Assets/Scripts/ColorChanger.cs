@@ -5,7 +5,7 @@ public class ColorChanger : MonoBehaviour
     private static Color color;
     public static Color Color { get => color; private set => color = value; }
 
-    // Каждый кадр генерировать случайный цвет и записывать в static переменную color
+    // РљР°Р¶РґС‹Р№ РєР°РґСЂ РіРµРЅРµСЂРёСЂРѕРІР°С‚СЊ СЃР»СѓС‡Р°Р№РЅС‹Р№ С†РІРµС‚ Рё Р·Р°РїРёСЃС‹РІР°С‚СЊ РІ static РїРµСЂРµРјРµРЅРЅСѓСЋ color
     private void Update()
     {
         color = new Color(Random.value, Random.value, Random.value);

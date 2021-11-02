@@ -13,19 +13,19 @@ public class PrefabBehaviour : MonoBehaviour
 
     void Update()
     {
-        // Уничтожить объект, если он ниже определенной координаты по оси Y
+        // РЈРЅРёС‡С‚РѕР¶РёС‚СЊ РѕР±СЉРµРєС‚, РµСЃР»Рё РѕРЅ РЅРёР¶Рµ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ РєРѕРѕСЂРґРёРЅР°С‚С‹ РїРѕ РѕСЃРё Y
         if (transform.position.y < -500)
             Destroy(gameObject);
 
-        // Сгенерировать цвет и присвоить одному объекту (каждому объекту генерируется свой цвет)
+        // РЎРіРµРЅРµСЂРёСЂРѕРІР°С‚СЊ С†РІРµС‚ Рё РїСЂРёСЃРІРѕРёС‚СЊ РѕРґРЅРѕРјСѓ РѕР±СЉРµРєС‚Сѓ (РєР°Р¶РґРѕРјСѓ РѕР±СЉРµРєС‚Сѓ РіРµРЅРµСЂРёСЂСѓРµС‚СЃСЏ СЃРІРѕР№ С†РІРµС‚)
         if (Input.GetKeyDown(KeyCode.I))
             prefabColor.material.color = new Color(Random.value, Random.value, Random.value);
 
-        // Присвоить цвет из статичной переменной color всем объектам
+        // РџСЂРёСЃРІРѕРёС‚СЊ С†РІРµС‚ РёР· СЃС‚Р°С‚РёС‡РЅРѕР№ РїРµСЂРµРјРµРЅРЅРѕР№ color РІСЃРµРј РѕР±СЉРµРєС‚Р°Рј
         if (Input.GetKeyDown(KeyCode.O))
             prefabColor.material.color = ColorChanger.Color;
 
-        // Переключить bool useGravity в Rigidbody объекта
+        // РџРµСЂРµРєР»СЋС‡РёС‚СЊ bool useGravity РІ Rigidbody РѕР±СЉРµРєС‚Р°
         if (Input.GetKeyDown(KeyCode.G))
             prefabRigidbody.useGravity = !prefabRigidbody.useGravity;
     }

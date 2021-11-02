@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class ReloadScene : MonoBehaviour
 {
-    // Перезагрузить текущую сцену по нажатию R
+    // РџРµСЂРµР·Р°РіСЂСѓР·РёС‚СЊ С‚РµРєСѓС‰СѓСЋ СЃС†РµРЅСѓ РїРѕ РЅР°Р¶Р°С‚РёСЋ R
 
     void Update()
     {

@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class ShowHideCanvas : MonoBehaviour
 {
-    // Показать/скрыть подсказку по нажатию клавиши H (активирует триггеры
-    // аниматоров двух холстов (Overlay Canvas и Help Window Canvas))
+    // РџРѕРєР°Р·Р°С‚СЊ/СЃРєСЂС‹С‚СЊ РїРѕРґСЃРєР°Р·РєСѓ РїРѕ РЅР°Р¶Р°С‚РёСЋ РєР»Р°РІРёС€Рё H (Р°РєС‚РёРІРёСЂСѓРµС‚ С‚СЂРёРіРіРµСЂС‹
+    // Р°РЅРёРјР°С‚РѕСЂРѕРІ РґРІСѓС… С…РѕР»СЃС‚РѕРІ (Overlay Canvas Рё Help Window Canvas))
 
     public Animator helpCanvasAnimator;
     public Animator overlayFadeInOut;
